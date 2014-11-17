@@ -1,0 +1,16 @@
+{
+  "name": "eshamow-consul",
+  "version": "0.1.0",
+  "author": "eshamow",
+  "summary": "Manage consul agents",
+  "license": "Apache 2.0",
+  "source": "http://github.com/eshamow/eshamow-consul",
+  "project_page": "https://github.com/eshamow/eshamow-consul",
+  "issues_url": "https://github.com/eshamow/eshamow-consul/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ]
+}

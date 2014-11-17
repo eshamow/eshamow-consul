@@ -1,0 +1,10 @@
+name          'eshamow-consul'
+version       '0.1.0'
+source        'http://github.com/eshamow/eshamow-consul'
+author        'eshamow'
+license       'Apache 2.0'
+summary       'Manage consul agents'
+description   ''
+project_page  'https://github.com/eshamow/eshamow-consul'
+
+dependency 'puppetlabs/stdlib'
