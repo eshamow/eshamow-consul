@@ -52,6 +52,7 @@ class consul (
     default: {
       $web_package_url = $full_web_package_url
     }
+  }
 
   class { 'consul::install': } ->
   class { 'consul::config': } ~>
