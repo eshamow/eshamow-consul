@@ -4,10 +4,11 @@
   "log_level": "INFO",
   "node_name": "<%= scope['::certname'] %>",
   "server": <%= scope['::consul::server'] %>,
-  <%- if scope['::consul::server'] == true %>
-  "bootstrap_expect": <%= scope['::consul::bootstrap_expect'] %>
-  <%- end %>
-  <%- if scope['::web_ui'] == true %>
-  "ui_dir": "/opt/consul/web"
-  <%- end %>
+  <% if scope['::consul::server'] == true -%>
+  "bootstrap_expect": <%= scope['::consul::bootstrap_expect'] %>,
+  <% end -%>
+  <% if scope['::web_ui'] == true -%>
+  "ui_dir": "/opt/consul/web",
+  <% end -%>
+  "client_addr": "0.0.0.0"
 }
