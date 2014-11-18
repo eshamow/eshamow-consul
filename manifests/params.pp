@@ -20,6 +20,6 @@ class consul::params {
 
   $datacenter       = 'default'
   $data_dir         = '/opt/consul'
-  $server           = true
+  $server           = false
   $bootstrap_expect = 3
 }

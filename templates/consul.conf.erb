@@ -4,5 +4,7 @@
   "log_level": "INFO",
   "node_name": "<%= scope['::certname'] %>",
   "server": <%= scope['::consul::server'] %>,
+  <%- if scope['::consul::server'] == true %>
   "bootstrap_expect": <%= scope['::consul::bootstrap_expect'] %>
+  <%- end %>
 }
