@@ -1,0 +1,8 @@
+{
+  "datacenter": "<%= scope['::consul::datacenter'] %>",
+  "data_dir": "<%= scope['::consul::data_dir'] %>",
+  "log_level": "INFO",
+  "node_name": "<%= scope['::certname'] %>",
+  "server": "<%= scope['::consul::server'] %>",
+  "bootstrap_expect": "<%= scope['::consul::bootstrap_expect'] %>"
+}
