@@ -22,4 +22,5 @@ class consul::params {
   $data_dir         = '/opt/consul'
   $server           = false
   $bootstrap_expect = 3
+  $web_ui           = false
 }

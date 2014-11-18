@@ -14,4 +14,8 @@ class consul::install {
       fail("${::operatingsystem} not supported")
     }
   }
+
+  if $::consul::web_ui == true {
+    contain ::consul::install::web_ui
+  }
 }

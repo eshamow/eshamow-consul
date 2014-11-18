@@ -7,4 +7,7 @@
   <%- if scope['::consul::server'] == true %>
   "bootstrap_expect": <%= scope['::consul::bootstrap_expect'] %>
   <%- end %>
+  <%- if scope['::web_ui'] == true %>
+  "ui_dir": "/opt/consul/web"
+  <%- end %>
 }
