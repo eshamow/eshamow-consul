@@ -42,7 +42,7 @@ class consul (
     undef: {
       case $::osfamily {
         'RedHat', 'Amazon': {
-          $web_package_url = "${web_package_location}/${web_package_name}-${package_version}.${::architecture}.rpm"
+          $web_package_url = "${web_package_location}/${web_package_name}-${package_version}.noarch.rpm"
         }
         default: {
           fail("${::operatingsystem} not supported")
